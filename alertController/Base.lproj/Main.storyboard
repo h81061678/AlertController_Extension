@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="alertController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iU-lz-Q9J">
+                                <rect key="frame" x="100" y="318.5" width="175" height="30"/>
+                                <state key="normal" title="一個"/>
+                                <connections>
+                                    <action selector="one:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uv5-oY-iBy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnM-Eg-vaY">
+                                <rect key="frame" x="100" y="363.5" width="175" height="30"/>
+                                <state key="normal" title="兩個"/>
+                                <connections>
+                                    <action selector="two:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5gc-Ph-OOQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSH-1B-Ryx">
+                                <rect key="frame" x="100" y="408.5" width="175" height="30"/>
+                                <state key="normal" title="三個"/>
+                                <connections>
+                                    <action selector="three:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tgc-PT-Ka6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtw-wD-dO4">
+                                <rect key="frame" x="100" y="446.5" width="175" height="30"/>
+                                <state key="normal" title="四個"/>
+                                <connections>
+                                    <action selector="foure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7k4-o8-u18"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fnM-Eg-vaY" firstAttribute="leading" secondItem="BSH-1B-Ryx" secondAttribute="leading" id="4ez-TR-b3o"/>
+                            <constraint firstItem="fnM-Eg-vaY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="6MT-M5-7MO"/>
+                            <constraint firstItem="2iU-lz-Q9J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="6ov-0h-ZnC"/>
+                            <constraint firstItem="2iU-lz-Q9J" firstAttribute="leading" secondItem="fnM-Eg-vaY" secondAttribute="leading" id="FTv-tI-WED"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rtw-wD-dO4" secondAttribute="trailing" constant="100" id="Lww-aU-wF6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2iU-lz-Q9J" secondAttribute="trailing" constant="100" id="S5o-TW-Gel"/>
+                            <constraint firstItem="2iU-lz-Q9J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VaO-o3-J8u"/>
+                            <constraint firstItem="BSH-1B-Ryx" firstAttribute="leading" secondItem="Rtw-wD-dO4" secondAttribute="leading" id="cgy-eA-ICC"/>
+                            <constraint firstItem="BSH-1B-Ryx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="hGl-k7-JH8"/>
+                            <constraint firstItem="BSH-1B-Ryx" firstAttribute="top" secondItem="fnM-Eg-vaY" secondAttribute="bottom" constant="15" id="hO3-nd-5iR"/>
+                            <constraint firstItem="Rtw-wD-dO4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="o1H-Td-z5i"/>
+                            <constraint firstItem="Rtw-wD-dO4" firstAttribute="top" secondItem="BSH-1B-Ryx" secondAttribute="bottom" constant="8" symbolic="YES" id="qh8-Vf-4vp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fnM-Eg-vaY" secondAttribute="trailing" constant="100" id="sAx-o4-t9g"/>
+                            <constraint firstItem="fnM-Eg-vaY" firstAttribute="top" secondItem="2iU-lz-Q9J" secondAttribute="bottom" constant="15" id="w3n-aL-aJd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BSH-1B-Ryx" secondAttribute="trailing" constant="100" id="wxa-sl-t2s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
