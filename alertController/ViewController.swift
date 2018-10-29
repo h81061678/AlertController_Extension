@@ -33,6 +33,7 @@ class ViewController: UIViewController{
         
         UIAlertController.showAlertController(title: "!@#", msg: "CATransformdsge", style: .alert, actions: actions);
     }
+    
     @IBAction func three(_ sender: UIButton) {
         let one = UIAlertAction.addAction(title: "oneAction", style: .default) {
             (action) in
@@ -51,6 +52,7 @@ class ViewController: UIViewController{
        UIAlertController.showAlertController(title: "展示", msg: "三個Action的實作", style: .alert, actions: actions)
         
     }
+    
     @IBAction func foure(_ sender: UIButton) {
         let ok = UIAlertAction.addAction(title: "AAA", style: .default) { (action) in
             print("AAA")

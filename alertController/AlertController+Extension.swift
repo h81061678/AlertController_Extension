@@ -15,7 +15,6 @@ extension UIAlertController {
         for action in actions{
             alertController.addAction(action)
         }
-        
         VC?.present(alertController, animated: true, completion: nil);
     }
     
